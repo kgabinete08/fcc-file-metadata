@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  h3 Submit a file, you will receive a JSON response with it's file size.
+
+  form(action="/api/filesize", method="POST", enctype="multipart/form-data")
+    input(type="file", name="file")
+    input(type="submit", value="Submit")

@@ -10,8 +10,8 @@ const multerOptions = {
   storage: multer.memoryStorage(),
   limits: {
     // ~5mb limit
-    fileSize: 5000000,
-  },
+    fileSize: 5000000
+  }
 };
 
 const upload = multer(multerOptions).single('file');
